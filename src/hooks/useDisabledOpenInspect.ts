@@ -13,7 +13,7 @@ const useDisabledOpenInspect = () => {
           icon: "😠",
         });
       } else if (rightClickCount == 2) {
-        toast("Again?? If you want to inspect again then you are Hasina", {
+        toast("Again?? If you try to inspect again then you are Hasina", {
           icon: "😡",
         });
       } else if (rightClickCount > 2) {
