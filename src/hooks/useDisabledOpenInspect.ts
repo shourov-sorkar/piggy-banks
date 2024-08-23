@@ -9,7 +9,7 @@ const useDisabledOpenInspect = () => {
       const nextCount = rightClickCount + 1;
       setRightClickCount(nextCount);
       if (rightClickCount == 1) {
-        toast("Why you are try to inspect?", {
+        toast("Why you are trying to inspect?", {
           icon: "😠",
         });
       } else if (rightClickCount == 2) {
