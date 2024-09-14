@@ -1,15 +1,17 @@
 import useDisabledOpenInspect from './hooks/useDisabledOpenInspect';
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 export const App = () => {
   useDisabledOpenInspect();
-
-
   return (
-    <div>
-      <h1 className="text-3xl font-bold flex items-center justify-center h-screen font-matemaise">
-        Monir's Piggy Bank
-      </h1>
-
+    <div className="App">
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='*' element={<Navigate to="/" />} />
+      </Routes>
     </div>
   );
 };
