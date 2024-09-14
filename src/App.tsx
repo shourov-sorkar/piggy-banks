@@ -1,3 +1,4 @@
+import { Navbar } from './components';
 import useDisabledOpenInspect from './hooks/useDisabledOpenInspect';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
@@ -7,6 +8,7 @@ export const App = () => {
   useDisabledOpenInspect();
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
